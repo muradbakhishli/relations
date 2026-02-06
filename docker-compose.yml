@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: relations
+    restart: always
+    environment:
+      POSTGRES_DB: relations
+      POSTGRES_USER: relations
+      POSTGRES_PASSWORD: relations
+    ports:
+      - '5432:5432'
